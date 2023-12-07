@@ -1,0 +1,462 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #42ad1c;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  margin: auto;
+}
+
+main {
+  height: 100%;
+  flex: 1;
+}
+
+nav {
+  width: 60%;
+  margin: auto;
+  margin-top: 30px;
+  background-color: #289b00;
+  height: 15px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-button {
+  width: 33%;
+  height: 100%;
+  background-color: #289b00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s ease;
+  padding: 25px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #f2f2f2;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.fa-money-bill-trend-up {
+  margin-right: 10px;
+}
+
+.radius-left {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.radius-right {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.nav-button:hover {
+  background-color: #f2f2f2;
+  color: purple;
+}
+
+.nav-button i {
+  color: #f2f2f2;
+}
+
+.nav-button:hover i {
+  color: purple;
+}
+
+.fa-solid {
+  font-size: 24px;
+}
+
+#andy-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-top: 10%;
+  flex-direction: column;
+  transition: opacity .5s ease-in-out, margin-top .5s;
+}
+
+#andy {
+  margin: auto;
+  width: 15%;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  margin-bottom: 10px;
+}
+
+#andy-container p {
+  color: #f2f2f2;
+  font-weight: bold;
+}
+
+.fade {
+    animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.page-container {
+  margin: auto;
+  min-height: 100%;
+  background-color: #f2f2f2;
+  margin-top: 10%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-top: 20px;
+  transition: opacity .75s ease-in-out, margin-top .75s, max-width .75s ease-in-out;
+}
+
+@media screen and (min-width: 400px) {
+  .page-container {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .page-container {
+    max-width: 85%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .page-container {
+    max-width: 75%;
+  }
+}
+
+.visible {
+  opacity: 1;
+  margin-top: 5%;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.chart-container {
+  width: 50%;
+  height: 60%;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 5%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.bottom-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  margin-bottom: 5%;
+}
+
+.bottom-button button {
+  background-color: #42ad1c;
+  border: 2px solid #42ad1c;
+  border-radius: 15px;
+  width: 50vw;
+  height: 30px;
+  color: white;
+  transition: background-color 0.5s ease;
+  max-width: 200px;
+  margin-bottom: 35px;
+}
+
+.bottom-button button:hover {
+  background-color: #f2f2f2;
+  border-color: purple;
+  color: purple;
+  cursor: pointer;
+}
+
+.box-format {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#expenseChart {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: auto;
+}
+
+#month-selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  margin: auto;
+}
+
+#left-arrow,
+#right-arrow {
+  color: inherit;
+  background-color: #f2f2f2;
+  border: none;
+  transition: transform 0.15s ease;
+}
+
+#left-arrow:hover i {
+  cursor: pointer;
+}
+
+#left-arrow:hover {
+  transform: translateX(-2.5px);
+}
+
+#right-arrow:hover i {
+  cursor: pointer;
+}
+
+#right-arrow:hover {
+  transform: translateX(2.5px);
+}
+
+#expenses-container {
+  width: 80%;
+  margin: auto;
+  height: auto;
+  overflow-y: auto;
+  max-height: 2000px;
+  margin-bottom: 5%;
+}
+
+.expense-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#slide-positions {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.slide-position {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.current-slide {
+  background-color: purple;
+}
+
+.category-name {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.expense-amount {
+  font-weight: bold;
+}
+
+#add-purchase {
+  font-size: 14px;
+  color: #f2f2f2;
+}
+
+.bottom-button button:hover #add-purchase {
+  color: purple;
+}
+
+.above-bottom-button button:hover #add-purchase {
+  color: purple;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.progress-bar {
+  position: relative;
+  height: 25px;
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+}
+
+.progress-bar-inner {
+  height: 100%;
+  width: 70%;
+  background-color: #42ad1c;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  color: #ffffff;
+}
+
+.progress-title,
+.progress-percent {
+  margin: 0;
+}
+
+.current-amount {
+  margin-right: 10px;
+}
+
+.target-amount {
+  margin-left: 10px;
+}
+
+.goal-header {
+  margin: auto;
+  text-align: center;
+}
+
+.achievement-header {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.achievement-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.text-bodies {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+.achievement-description,
+.achievement-progress {
+  margin-bottom: 5px;
+}
+
+.achievement-progress {
+  font-style: italic;
+}
+
+#andy-quote {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+#addPurchaseForm, 
+#addGoalForm, 
+#updateGoalForm {
+  color: white;
+  font-weight: bold;
+}
+
+.inputs {
+  position: fixed;
+  top: 80px;
+  left: 5rem;
+}
+
+#addPurchaseForm select, 
+#addGoalForm select, 
+#updateGoalForm select {
+  appearance: none; 
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  padding: 8px; 
+  border: 1px solid #cccccc; 
+  border-radius: 4px; 
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+#addPurchaseForm select::-ms-expand, 
+#addGoalForm select::-ms-expand, 
+#updateGoalForm select::-ms-expand {
+  display: none;
+}
+
+#addPurchaseForm select:focus, 
+#addGoalForm select:focus, 
+#updateGoalForm select:focus {
+  outline: none; 
+  border-color: #007bff; 
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+#addPurchaseForm select option, 
+#addGoalForm select option, 
+#updateGoalForm select option {
+  background-color: white; 
+  color: #333333; 
+}
+
+#addPurchaseForm button, 
+#addGoalForm button, 
+#updateGoalForm button {
+  position: fixed;
+  top: 400px;
+  background-color: white;
+  color: green;
+  font-weight: bold;
+  transition: background-color 0.5s ease;
+}
+
+#addPurchaseForm button:hover, #addGoalForm button:hover, #updateGoalForm button:hover {
+  color: purple;
+}
