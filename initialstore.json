@@ -1,0 +1,298 @@
+{
+    "users": [
+        {
+            "userID": 1,
+            "username": "Lydia",
+            "email": "lydia@example.com",
+            "passwordHash": "hashed_password",
+            "createDate": "2023-01-01"
+        }
+    ],
+    "expenseSummary": [
+        {
+            "expenseID": 101,
+            "userID": 1,
+            "category": "Groceries",
+            "color": "#3498db",
+            "amount": 150.0,
+            "month": "December"
+        },
+        {
+            "expenseID": 102,
+            "userID": 1,
+            "category": "Utilities",
+            "color": "#e74c3c",
+            "amount": 75.0,
+            "month": "December"
+        },
+        {
+            "expenseID": 103,
+            "userID": 1,
+            "category": "Rent",
+            "color": "#2ecc71",
+            "amount": 500.0,
+            "month": "December"
+        },
+        {
+            "expenseID": 104,
+            "userID": 1,
+            "category": "Clothing",
+            "color": "#f39c12",
+            "amount": 50.0,
+            "month": "December"
+        },
+        {
+            "expenseID": 105,
+            "userID": 1,
+            "category": "Other",
+            "color": "#9b59b6",
+            "amount": 323.0,
+            "month": "December"
+        },
+        {
+            "expenseID": 106,
+            "userID": 1,
+            "category": "Groceries",
+            "color": "#3498db",
+            "amount": 300.0,
+            "month": "January"
+        },
+        {
+            "expenseID": 107,
+            "userID": 1,
+            "category": "Utilities",
+            "color": "#e74c3c",
+            "amount": 75.0,
+            "month": "January"
+        },
+        {
+            "expenseID": 108,
+            "userID": 1,
+            "category": "Rent",
+            "color": "#2ecc71",
+            "amount": 500.0,
+            "month": "January"
+        },
+        {
+            "expenseID": 109,
+            "userID": 1,
+            "category": "Clothing",
+            "color": "#f39c12",
+            "amount": 76.0,
+            "month": "January"
+        },
+        {
+            "expenseID": 110,
+            "userID": 1,
+            "category": "Other",
+            "color": "#9b59b6",
+            "amount": 348.0,
+            "month": "January"
+        },
+        {
+            "expenseID": 106,
+            "userID": 1,
+            "category": "Groceries",
+            "color": "#3498db",
+            "amount": 400.0,
+            "month": "November"
+        },
+        {
+            "expenseID": 107,
+            "userID": 1,
+            "category": "Utilities",
+            "color": "#e74c3c",
+            "amount": 75.0,
+            "month": "November"
+        },
+        {
+            "expenseID": 108,
+            "userID": 1,
+            "category": "Rent",
+            "color": "#2ecc71",
+            "amount": 500.0,
+            "month": "November"
+        },
+        {
+            "expenseID": 109,
+            "userID": 1,
+            "category": "Clothing",
+            "color": "#f39c12",
+            "amount": 89.0,
+            "month": "November"
+        },
+        {
+            "expenseID": 110,
+            "userID": 1,
+            "category": "Other",
+            "color": "#9b59b6",
+            "amount": 27.56,
+            "month": "November"
+        },
+        {
+            "expenseID": 106,
+            "userID": 1,
+            "category": "Groceries",
+            "color": "#3498db",
+            "amount": 500.0,
+            "month": "October"
+        },
+        {
+            "expenseID": 107,
+            "userID": 1,
+            "category": "Utilities",
+            "color": "#e74c3c",
+            "amount": 75.0,
+            "month": "October"
+        },
+        {
+            "expenseID": 108,
+            "userID": 1,
+            "category": "Rent",
+            "color": "#2ecc71",
+            "amount": 500.0,
+            "month": "October"
+        },
+        {
+            "expenseID": 109,
+            "userID": 1,
+            "category": "Clothing",
+            "color": "#f39c12",
+            "amount": 157.75,
+            "month": "October"
+        },
+        {
+            "expenseID": 110,
+            "userID": 1,
+            "category": "Other",
+            "color": "#9b59b6",
+            "amount": 57.99,
+            "month": "October"
+        },
+        {
+            "expenseID": 106,
+            "userID": 1,
+            "category": "Groceries",
+            "color": "#3498db",
+            "amount": 450.0,
+            "month": "February"
+        },
+        {
+            "expenseID": 107,
+            "userID": 1,
+            "category": "Utilities",
+            "color": "#e74c3c",
+            "amount": 75.0,
+            "month": "February"
+        },
+        {
+            "expenseID": 108,
+            "userID": 1,
+            "category": "Rent",
+            "color": "#2ecc71",
+            "amount": 500.0,
+            "month": "February"
+        },
+        {
+            "expenseID": 109,
+            "userID": 1,
+            "category": "Clothing",
+            "color": "#f39c12",
+            "amount": 99.0,
+            "month": "February"
+        },
+        {
+            "expenseID": 110,
+            "userID": 1,
+            "category": "Other",
+            "color": "#9b59b6",
+            "amount": 35.44,
+            "month": "February"
+        }
+    ],
+    "goals": [
+        {
+            "goalID": 201,
+            "userID": 1,
+            "goalType": "Long-term",
+            "description": "Save for a new laptop",
+            "targetAmount": 1000.0,
+            "currentAmount": 300.0,
+            "startDate": "2023-01-01",
+            "endDate": "2023-12-31",
+            "status": "Ongoing"
+        },
+        {
+            "goalID": 202,
+            "userID": 1,
+            "goalType": "Short-term",
+            "description": "Limit eating out",
+            "targetAmount": 100.0,
+            "currentAmount": 50.0,
+            "startDate": "2023-05-01",
+            "endDate": "2023-05-31",
+            "status": "Ongoing"
+        },
+        {
+            "goalID": 203,
+            "userID": 1,
+            "goalType": "Long-term",
+            "description": "Clothing spending limit",
+            "targetAmount": 500.0,
+            "currentAmount": 230.0,
+            "startDate": "2023-06-01",
+            "endDate": "2023-12-31",
+            "status": "Ongoing"
+        },
+      {
+            "goalID": 204,
+            "userID": 1,
+            "goalType": "Short-term",
+            "description": "Academic spending limit",
+            "targetAmount": 400.0,
+            "currentAmount": 370.0,
+            "startDate": "2023-09-01",
+            "endDate": "2023-09-31",
+            "status": "Ongoing"
+        }
+    ],
+    "achievements": [
+        {
+            "achievementID": 301,
+            "userID": 1,
+            "achievementType": "Budgeting",
+            "status": "In Progress",
+            "progress": 50,
+            "unlockDate": "2023-06-01"
+        },
+      {
+            "achievementID": 302,
+            "userID": 1,
+            "achievementType": "Saving",
+            "status": "In Progress",
+            "progress": 75,
+            "unlockDate": "2023-07-01"
+        }
+      
+    ],
+    "achievementCatalog": [
+        {
+            "catalogID": 401,
+            "description": "Stay within monthly budget for 3 months",
+            "criteria": "Budgeting",
+            "progress": "66.7%"
+        },
+        {
+            "catalogID": 402,
+            "description": "Save $500 in emergency fund",
+            "criteria": "Saving",
+            "progress": "50%"
+        },
+      {
+            "catalogID": 403,
+            "description": "Complete education module on “Basic Budgeting 101”",
+            "criteria": "Education",
+            "progress": "33.3%"
+        }
+    ]
+}
